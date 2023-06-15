@@ -26,22 +26,14 @@ class Login extends Model
     public function rules()
     {
         return [
-            // username and password are both required
+            //Reglas de validacion en el login
             [['username', 'password'], 'required'],
-            // rememberMe must be a boolean value
             ['rememberMe', 'boolean'],
-            // password is validated by validatePassword()
             ['password', 'validatePassword'],
         ];
     }
 
-    /**
-     * Validates the password.
-     * This method serves as the inline validation for password.
-     *
-     * @param string $attribute the attribute currently being validated
-     * @param array $params the additional name-value pairs given in the rule
-     */
+    // Validacion del password con un metodo nuevo
     public function validatePassword($attribute, $params)
     {
         if (!$this->hasErrors()) {
@@ -53,10 +45,7 @@ class Login extends Model
         }
     }
 
-    /**
-     * Logs in a user using the provided username and password.
-     * @return bool whether the user is logged in successfully
-     */
+    // Retornamos un valor booleano si la funcion es verdadera.
     public function login()
     {
         if ($this->validate()) {
@@ -65,11 +54,7 @@ class Login extends Model
         return false;
     }
 
-    /**
-     * Finds user by [[username]]
-     *
-     * @return User|null
-     */
+    // Getter utilizado para la busqueda del usuario por su username
     public function getUser()
     {
         if ($this->_user === false) {
