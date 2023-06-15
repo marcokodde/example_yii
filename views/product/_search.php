@@ -8,6 +8,8 @@ use yii\widgets\ActiveForm;
 /** @var yii\widgets\ActiveForm $form */
 ?>
 
+<?php /* Vista utilizada para las busquedas de ciertos campos */ ?>
+
 <div class="product-search">
 
     <?php $form = ActiveForm::begin([
@@ -25,9 +27,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id_marca') ?>
 
-    <?php // echo $form->field($model, 'descripcion') ?>
+    <?php // echo $form->field($model, 'descripcion') 
+    ?>
 
-    <?php // echo $form->field($model, 'stock') ?>
+    <?php // echo $form->field($model, 'stock') 
+    ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

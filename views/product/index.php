@@ -11,6 +11,10 @@ use yii\grid\GridView;
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
 ?>
+<?php /* Se enlistan los productos no se tiene la certeza de varios puntos como lo son:
+1.- Como mostrar la relacion con id_marca y poder mostrar el nombre en este caso Truper o Pretul
+2.- No se encontro como mostrar los valores de Pagina, Trupper y Telefono */ ?>
+
 <div class="card">
     <div class="card-title navbar-expand-md bg-info">
         <h2>Productos</h2>
@@ -26,9 +30,6 @@ use yii\grid\GridView;
             <?= Html::a('Crear Producto', ['create'], ['class' => 'btn btn-success']) ?>
         </p>
 
-        <?php // echo $this->render('_search', ['model' => $searchModel]); 
-        ?>
-
         <?= GridView::widget([
             'dataProvider' => $dataProvider,
             'filterModel' => $searchModel,
@@ -39,7 +40,7 @@ use yii\grid\GridView;
                 'nombre',
                 'id_marca',
                 [
-                    'class' => 'yii\grid\DataColumn',  // Se puede omitir, ya que es la predefinida.
+                    'class' => 'yii\grid\DataColumn',
                     'label' => 'Pagina'
                 ],
 

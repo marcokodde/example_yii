@@ -5,9 +5,10 @@ use yii\helpers\Html;
 /** @var yii\web\View $this */
 /** @var app\models\Product $model */
 /** @var app\models\Marca $marca */
-
-
 ?>
+
+<?php /* Vista utilizada para mostrar el formulario de crear producto */ ?>
+
 <div class="card">
     <div class="card-title navbar-expand-md bg-info">
         <h2>Crear Producto</h2>

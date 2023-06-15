@@ -9,6 +9,7 @@ use yii\widgets\ActiveForm;
 /** @var yii\widgets\ActiveForm $form */
 ?>
 
+<?php /* Reutilizacion de formulario para actualizar y crear productos */ ?>
 <div class="product-form">
 
     <?php $form = yii\widgets\ActiveForm::begin(); ?>

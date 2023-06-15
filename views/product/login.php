@@ -7,11 +7,13 @@
 
 use yii\bootstrap5\ActiveForm;
 use yii\bootstrap5\Html;
-use yii\helpers\Url;
 
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
+<?php /* Para poder visualizar los productos este debe estar logueado, lo mismo en el menu */ ?>
+
 <div class="site-login">
     <div class="card">
         <div class="card-title navbar-expand-md bg-info">

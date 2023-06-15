@@ -5,6 +5,8 @@ use yii\helpers\Html;
 /** @var yii\web\View $this */
 /** @var app\models\Product $model */
 ?>
+<?php /* Se utiliza el mismo formulario para actualizar el registro*/ ?>
+
 <div class="card">
     <div class="card-title navbar-expand-md bg-info">
         <h2>Actualizar Producto</h2>

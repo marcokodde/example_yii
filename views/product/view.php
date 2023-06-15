@@ -11,6 +11,8 @@ $this->params['breadcrumbs'][] = ['label' => 'Products', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
+<?php /* Al ingresar un registro se visualiza esta vista, al igual que al dar clic en el boton ver de las acciones de productos */ ?>
+
 <div class="product-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
